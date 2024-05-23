@@ -44,12 +44,6 @@ if (!isset($_SESSION["email"])) {
 
             $photo = $_FILES["photo"]["name"];
 
-
-
-
-
-            
-
             $fileName = basename($_FILES["photo"]["name"]);
             $targetFilePath = dirname(dirname(__FILE__)) . "/assets/imgs/" . $fileName;
             echo $targetFilePath;
